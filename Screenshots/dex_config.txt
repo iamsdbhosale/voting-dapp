@@ -1,0 +1,80 @@
+Ganache Local RPC - 192.168.225.68:8545
+Truffle v5.11.5 (core: 5.11.5)
+Ganache v7.9.1
+Solidity v0.5.16 (solc-js)
+Node v21.6.1
+Web3.js v1.10.0
+
+Voting contract :
+0x69c4026f9216c812E4C239244f48E83D53901E01
+
+const WFO_TOKEN_ADDRESS ="0x1c8524340FD81418Bbc35EEd971f654E954342a4";
+---
+Available Accounts
+==================
+(0) 0x0A17212c07D86390d8fF22900Aeca303D8186245 (1000 ETH)
+(1) 0x827498DaB018f826C70A9b3290B843eCf595FA39 (1000 ETH)
+(2) 0x5646d307a857F007c3786EB61365D2a354d425e2 (1000 ETH)
+(3) 0x5F40dB47A5DEd998e7FC6966629ca245Cc77fBCA (1000 ETH)
+(4) 0x2A3aDE1124669ca94C37c6b5D56162Dd8DfaAf5d (1000 ETH)
+(5) 0x714929f563Aa658f046d09eD103799e1971CA436 (1000 ETH)
+(6) 0x195cEE7CaCA09b9870ef4347580E7B0eB60cD88d (1000 ETH)
+(7) 0x008658f1b470f8AA7bA2C2Dcee77b704e50b2C4e (1000 ETH)
+(8) 0xF79cad632653aBa69A29E6e4B0702483bAbEafe4 (1000 ETH)
+(9) 0x6e1fd71e0e61F0EAe7509bc11563D6f9d79aec9D (1000 ETH)
+
+Private Keys
+==================
+(0) 0xb8e81d4bc7abd3464af6f8d7d6a1972aa779ec4b25ab5adc5f629bd29e1c291e
+(1) 0x94993c81f6ed1c1cce136559e5889add0ea2b3c80b3dda09d1a2d0acc05d459f
+(2) 0xc451de033784527c28d03c02a205425906fa9df48fdbcd37870adf2b8e592773
+(3) 0x62fa8d2fe29571396b3b89bbe546d81fc62c961e3582b2b9d18e6e9df1048341
+(4) 0x8b80379ba6e26ca7ba18a9d8173a073c60ed3c998e0fda87ba14ff7bef28ee51
+(5) 0x98cc072f088cf6078051f4f6a98787c85e2a0e2dd8b0d5ad59d5d2b3b9a41fe6
+(6) 0xff199bfda0e67bb9012570edbedbad18224b6f25eee0033dbabde0fac68c5e6a
+(7) 0xfc5b4e4063dc7c4e3e4136e4b3e8223434d86ce4d8710cc61297e4a5b4f2f532
+(8) 0x6952025ef446817266e8ad9c5d0368bc8a2ae6f9e751089ec92b25c2008f9b0f
+(9) 0x4ff498760c4af6fb348a8e0a80cd71c5e7b1cd0e775e3f28d1311f429e127b62
+---
+New WFO Token Contract Address :
+0xf1f7BCeD1f30867284dA9a1F52F9AcD014F25a6E
+
+Please add WFO token contract in migratins->2_deploy_voting.js in voting project
+
+PS D:\voting-dapp> truffle migrate
+
+New voting contract Address :
+0x78C53673bCAb11707d6a5DA6C2dc2Ac72c9e4079
+
+
+Pasteing New Voting contract Address and New WFO Token address in
+D:\voting-dapp\voting-frontend\src\App.js
+
+
+PS D:\voting-dapp> cd .\voting-frontend\
+PS D:\voting-dapp\voting-frontend> npm start
+---
+
+🛠 Summary Answer:
+Requirement	Value
+Minimum required WFO tokens	10 WFO
+Minimum raw token units	10000000000000000000 (10 * 10¹⁸)
+MetaMask must approve contract	Yes, for at least 10 WFO
+
+✅ Recommendation
+Make sure your MetaMask account has ≥10 WFO tokens.
+
+Run approve() before calling vote().
+
+Optionally, in your UI, you can show a message:
+
+"You must have at least 10 WFO tokens and approve this contract to vote."
+---
+Ref. : https://chatgpt.com/share/68383de5-6408-8012-ae33-0cb73b1f8bbd
+---
+0xf1f7BCeD1f30867284dA9a1F52F9AcD014F25a6E
+Voting contract
+0x652da223C71B73a1436b92FE766307CEc1d1662C
+---
+NOTA - None of the above (India)
+---
